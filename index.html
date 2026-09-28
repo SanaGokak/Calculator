@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modesty by SanaGKK | Luxury Modest Fashion, Abayas & Silks</title>
+  <meta name="description" content="Discover Modesty by SanaGKK. High-couture modest fashion, handcrafted Dubai Nida abayas, Medina silk hijabs, and tailoring in signature navy blue, beige, and slate gray." />
+  <meta name="keywords" content="Modesty by SanaGKK, modest fashion, luxury abayas, Dubai Nida, Medina silk hijab, modest co-ords, kaftans, navy abaya, beige modest dress" />
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Modesty by SanaGKK | Luxury Modest Fashion Atelier" />
+  <meta property="og:description" content="Timeless Grace, Contemporary Modesty. Handcrafted abayas, silks, and tailored co-ords." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Modesty by SanaGKK",
+    "description": "High-couture modest fashion label crafting bespoke abayas, silks, and tailored modest wear.",
+    "priceRange": "$$$",
+    "currenciesAccepted": "USD, AED, GBP, EUR, CAD",
+    "paymentAccepted": "Credit Card, Apple Pay, Google Pay, Cash on Delivery"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       ANNOUNCEMENT TICKER
+       ====================================================================== -->
+  <div class="announcement-bar">
+    <div class="container announcement-container">
+      <div class="announcement-ticker">
+        <span>Complimentary Worldwide Express Delivery on orders over $150</span>
+        <span>•</span>
+        <span>Use code <span class="highlight">MODEST10</span> for 10% Off</span>
+        <span>•</span>
+        <span>Complimentary SanaGKK Silk Keepsake Dustbag</span>
+      </div>
+
+      <div class="announcement-side">
+        <a href="#size-guide" data-open-size-guide style="display: flex; align-items: center; gap: 0.35rem;">
+          <i class="fa-solid fa-ruler-combined"></i> Size Calculator
+        </a>
+        <div class="currency-select-wrap">
+          <i class="fa-solid fa-globe" style="font-size: 0.75rem;"></i>
+          <select id="currency-selector" aria-label="Currency Selector">
+            <option value="USD">USD ($)</option>
+            <option value="AED">AED (د.إ)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="CAD">CAD ($)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       NAVIGATION & HEADER
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Mobile Menu Trigger -->
+      <button class="action-btn mobile-menu-btn" data-open-drawer="mobile-nav" aria-label="Open mobile menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="brand-emblem">
+          <div class="brand-monogram">SG</div>
+          <span class="brand-name">Modesty <span>by</span> SanaGKK</span>
+        </div>
+        <span class="brand-subtitle">Haute Couture Modesty • Atelier</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#shop-section" class="nav-link active">Collections</a></li>
+          <li><a href="#shop-section" class="nav-link" onclick="window.modestyApp && window.clearProductFilters && (window.clearProductFilters(), document.querySelector('[data-category=abayas]').click())">Abayas</a></li>
+          <li><a href="#shop-section" class="nav-link" onclick="window.modestyApp && window.clearProductFilters && (window.clearProductFilters(), document.querySelector('[data-category=hijabs]').click())">Silks</a></li>
+          <li><a href="#shop-section" class="nav-link" onclick="window.modestyApp && window.clearProductFilters && (window.clearProductFilters(), document.querySelector('[data-category=coords]').click())">Co-ords</a></li>
+          <li><a href="#lookbook-section" class="nav-link">Lookbook</a></li>
+          <li><a href="#story-section" class="nav-link">The Atelier</a></li>
+          <li><a href="#reviews-section" class="nav-link">Client Reviews</a></li>
+          <li><a href="#faq-section" class="nav-link">Care & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Search Trigger / Shortcut Hint -->
+        <button class="action-btn" onclick="document.getElementById('product-search-input')?.focus(); document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'});" title="Search Garments (Ctrl+K)" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Wishlist Drawer Trigger -->
+        <button class="action-btn" data-open-drawer="wishlist" title="Your Wishlist" aria-label="Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="action-badge" id="wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Cart Drawer Trigger -->
+        <button class="action-btn" data-open-drawer="cart" title="Shopping Bag" aria-label="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="action-badge gold" id="cart-count-badge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       HERO SECTION
+       ====================================================================== -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-wrap">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            <span>Autumn / Winter '26 Capsule Collection</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Modesty, Elevated <br />
+          to an <em>Art Form.</em>
+        </h1>
+
+        <p class="hero-description">
+          Engineered for the discerning woman who refuses to compromise between high elegance and modest dignity. Featuring our signature palette of <strong>Midnight Navy</strong>, <strong>Warm Sand Beige</strong>, and <strong>Refined Slate Gray</strong> crafted from pure Dubai Nida and Medina Silks.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#shop-section" class="btn btn-navy btn-lg">
+            <span>Explore Collection</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#lookbook-section" class="btn btn-beige btn-lg">
+            <i class="fa-regular fa-compass"></i>
+            <span>View Lookbook</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="stat-number">4.9/5</span>
+            <span class="stat-label"><i class="fa-solid fa-star" style="color: #E2A03F;"></i> 2,800+ Verified Reviews</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label"><i class="fa-solid fa-shield-halved text-gold"></i> Non-Transparent Opacity</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-number">50"- 60"</span>
+            <span class="stat-label"><i class="fa-solid fa-ruler text-gold"></i> Custom Tailored Lengths</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-deco-ring"></div>
+        <div class="hero-image-card">
+          <img 
+            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1000&q=80" 
+            alt="Modesty by SanaGKK Royal Navy Embroidered Abaya" 
+          />
+        </div>
+
+        <!-- Floating Trending Product Pill -->
+        <div class="floating-product-pill">
+          <div class="floating-thumb">
+            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=200&q=80" alt="Royal Navy Abaya" />
+          </div>
+          <div class="floating-info">
+            <span class="badge-pill badge-gold" style="font-size: 0.6rem; padding: 0.15rem 0.45rem;">ATELIER ICON</span>
+            <h4>Royal Navy Silk Abaya</h4>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
+              <span class="floating-price">$185</span>
+              <button class="floating-buy-btn" onclick="window.modestyApp.openQuickView('sg-01')">Quick View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       BRAND VALUES / TRUST BAR
+       ====================================================================== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <div class="trust-text">
+            <h4>Authentic Dubai Nida</h4>
+            <p>Weighty, cool-to-touch bespoke weaves imported directly from United Arab Emirates ateliers.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <div class="trust-text">
+            <h4>Bespoke Length Options</h4>
+            <p>From 52" petite to 60" statuesque lengths designed to gracefully skim above shoe lines.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div class="trust-text">
+            <h4>True Zero Opacity Flaw</h4>
+            <p>Strictly vetted multi-layer density ensuring zero silhouette transparency under daylight.</p>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <i class="fa-solid fa-box-archive"></i>
+          </div>
+          <div class="trust-text">
+            <h4>SanaGKK Keepsake Box</h4>
+            <p>Delivered in signature gold-stamped luxury dustbags and eco-certified packaging.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CURATED CATEGORY SHOWCASE
+       ====================================================================== -->
+  <section class="section-py" style="background-color: var(--beige-50);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">CURATED SILHOUETTES</span>
+        <h2>Explore By Collection</h2>
+        <p>Every piece is harmonized across our signature Navy Blue, Warm Sand Beige, and Slate Gray palette for effortless capsule wardrobing.</p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card" onclick="document.querySelector('[data-category=abayas]')?.click(); document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'});">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80" alt="Luxury Abayas" />
+          <div class="category-overlay">
+            <h3>Luxury Abayas</h3>
+            <span>Discover Cut & Drape <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="document.querySelector('[data-category=coords]')?.click(); document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'});">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=700&q=80" alt="Tailored Modest Co-ords" />
+          <div class="category-overlay">
+            <h3>Tailored Co-ords</h3>
+            <span>Linen & Ribbed Knits <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="document.querySelector('[data-category=hijabs]')?.click(); document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'});">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" alt="Medina Silks & Chiffon" />
+          <div class="category-overlay">
+            <h3>Medina Silks</h3>
+            <span>Non-Slip Luxury Hijabs <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <div class="category-card" onclick="document.querySelector('[data-category=festive]')?.click(); document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'});">
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Festive Kaftans" />
+          <div class="category-overlay">
+            <h3>Festive Kaftans</h3>
+            <span>Artisanal Gold Zari <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       PRODUCT CATALOG & FILTER SECTION
+       ====================================================================== -->
+  <section class="section-py shop-section" id="shop-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">THE SANAGKK ATELIER</span>
+        <h2>Shop The Capsule Collection</h2>
+        <p>Refined silhouettes tailored with exquisite craftsmanship and timeless modesty.</p>
+      </div>
+
+      <!-- Filter & Search Toolbar -->
+      <div class="filter-toolbar">
+        <div class="filter-categories">
+          <button class="filter-cat-btn active" data-category="all">All Pieces</button>
+          <button class="filter-cat-btn" data-category="abayas">Luxury Abayas</button>
+          <button class="filter-cat-btn" data-category="hijabs">Silks & Hijabs</button>
+          <button class="filter-cat-btn" data-category="coords">Modest Co-ords</button>
+          <button class="filter-cat-btn" data-category="festive">Festive & Kaftans</button>
+          <button class="filter-cat-btn" data-category="essentials">Innerwear & Slips</button>
+        </div>
+
+        <div class="filter-secondary-controls">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="product-search-input" placeholder="Search by name, fabric, or color (e.g. Navy, Silk, Nida)..." aria-label="Search garments" />
+          </div>
+
+          <div class="sort-and-count">
+            <span class="product-count-display" id="product-count">Showing 12 garments</span>
+            <div class="sort-select-wrap">
+              <label for="product-sort-select">SORT BY:</label>
+              <select id="product-sort-select">
+                <option value="featured">Featured Curations</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="newest">New Arrivals</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dynamic Product Cards Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Rendered via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       EDITORIAL LOOKBOOK / SHOP THE LOOK
+       ====================================================================== -->
+  <section class="section-py lookbook-section" id="lookbook-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">EDITORIAL STYLING</span>
+        <h2>Shop The Curated Looks</h2>
+        <p>Our founder Sana Khan curates complete ensembles matching our three anchor hues.</p>
+      </div>
+
+      <!-- Look 1 -->
+      <div class="lookbook-card">
+        <div class="lookbook-image-pane">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1100&q=80" alt="The Desert Monolith Ensemble" />
+        </div>
+        <div class="lookbook-details-pane">
+          <div class="palette-dots">
+            <span class="palette-dot" style="background: #EFE8DE;" title="Warm Sand Beige"></span>
+            <span class="palette-dot" style="background: #5A6B7C;" title="Feather Slate Gray"></span>
+            <span class="palette-dot" style="background: #C4AC8F;" title="Desert Clay Accent"></span>
+          </div>
+          <span class="eyebrow">LOOK 01 • DAYTIME ELEVATION</span>
+          <h3 class="lookbook-title">The Desert Monolith Ensemble</h3>
+          <div class="lookbook-subtitle">Sahara Sand Linen Co-ord + Slate Medina Silk Hijab</div>
+          <p class="lookbook-desc">
+            An architectural pairing designed for breezy, graceful movement. The organic linen co-ord provides breathable, full-coverage ease, while the feather-light slate gray Medina silk creates a gentle, non-clinging frame around the shoulders.
+          </p>
+          <div class="bundle-offer-badge">
+            <i class="fa-solid fa-tags text-gold"></i>
+            <span>Bundle Incentive: Receive 15% OFF when purchased together with code <strong>SANAVIP</strong></span>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-navy" onclick="window.modestyApp.openQuickView('sg-02')">
+              Shop The Co-ord ($145)
+            </button>
+            <button class="btn btn-beige" onclick="window.modestyApp.openQuickView('sg-03')">
+              Shop The Silk Trio ($68)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Look 2 -->
+      <div class="lookbook-card">
+        <div class="lookbook-details-pane">
+          <div class="palette-dots">
+            <span class="palette-dot" style="background: #0B1B2B;" title="Midnight Navy"></span>
+            <span class="palette-dot" style="background: #C5A880;" title="Champagne Gold Zari"></span>
+            <span class="palette-dot" style="background: #5A6B7C;" title="Slate Blue"></span>
+          </div>
+          <span class="eyebrow">LOOK 02 • REGAL EVENINGS</span>
+          <h3 class="lookbook-title">The Midnight Royal Soirée</h3>
+          <div class="lookbook-subtitle">Royal Navy Embroidered Abaya + Modal Foundation Slip</div>
+          <p class="lookbook-desc">
+            Deep midnight navy Dubai Nida, contrasted with antique champagne threadwork along the kimono cuffs. Layered over our cooling, anti-static modal slip dress to guarantee uninterrupted fluidity under evening chandeliers.
+          </p>
+          <div class="bundle-offer-badge">
+            <i class="fa-solid fa-tags text-gold"></i>
+            <span>Includes matching chiffon sheila scarf & signature dustbag</span>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-navy" onclick="window.modestyApp.openQuickView('sg-01')">
+              Shop The Royal Abaya ($185)
+            </button>
+            <button class="btn btn-beige" onclick="window.modestyApp.openQuickView('sg-09')">
+              Shop The Foundation Slip ($58)
+            </button>
+          </div>
+        </div>
+        <div class="lookbook-image-pane">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1100&q=80" alt="The Midnight Royal Soirée" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       BRAND STORY / THE ATELIER PHILOSOPHY
+       ====================================================================== -->
+  <section class="section-py story-section" id="story-section">
+    <div class="container story-grid">
+      <div class="story-visual-wrap">
+        <div class="story-portrait-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Sana G. K. Khan Founder Portrait" />
+        </div>
+        <div class="founder-signature-card">
+          <div class="founder-name">Sana G. K. Khan</div>
+          <div class="founder-role">Founder & Creative Director</div>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <span class="eyebrow" style="color: var(--gold-500);">THE SANAGKK PHILOSOPHY</span>
+        <h2>Modesty is Not Absence of Style; It is The Pinnacle of It.</h2>
+        <p>
+          "I founded Modesty by SanaGKK because I was weary of seeing modest fashion treated as an afterthought in mainstream haute couture. Modest women deserve garments meticulously engineered with bespoke tailoring, non-see-through pure silks, and silhouettes that radiate effortless authority."
+        </p>
+        <p>
+          Every silhouette in our collection is developed between our studios in Dubai and London. We work exclusively with certified ethical textile mills that produce heavyweight, breathable Dubai Nida, French-woven Medina silks, and eco-certified organic linens.
+        </p>
+
+        <div class="story-pillars-row">
+          <div class="story-pillar-item">
+            <h4>Uncompromising Opacity</h4>
+            <p>Every bolt of fabric is rigorously tested against studio backlighting to guarantee absolute zero transparency.</p>
+          </div>
+          <div class="story-pillar-item">
+            <h4>Harmonious Palette</h4>
+            <p>Curated around Navy Blue, Warm Sand Beige, and Slate Gray for mix-and-match capsule longevity.</p>
+          </div>
+          <div class="story-pillar-item">
+            <h4>Bespoke Fit</h4>
+            <p>Standard lengths from 52" to 60" plus complimentary atelier tailoring for a flawless drape.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       INTERACTIVE SIZE GUIDE TEASER & CALCULATOR TRIGGER
+       ====================================================================== -->
+  <section class="section-py" id="size-guide" style="background-color: var(--beige-100); border-bottom: 1px solid var(--beige-300);">
+    <div class="container" style="max-width: 900px; text-align: center;">
+      <span class="eyebrow">PERFECT FLOOR-GRAZING FIT</span>
+      <h2 style="font-size: 2.6rem; margin-bottom: 1rem;">Find Your Tailored SanaGKK Abaya Length</h2>
+      <p style="color: var(--slate-600); margin-bottom: 2rem; font-size: 1rem;">
+        Unlike standard retail sizing, luxury abayas are proportioned according to your exact vertical stature. Use our interactive size calculator to determine your optimal sleeve-to-hem drape.
+      </p>
+
+      <div style="background: #FFFFFF; border: 1px solid var(--beige-300); border-radius: var(--border-radius-lg); padding: 2.5rem; box-shadow: var(--shadow-md);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+          <span style="font-size: 0.88rem; font-weight: 600; color: var(--navy-900);">Select Your Height:</span>
+          <span id="height-calc-display" style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 700; color: var(--navy-900);">5'5" (165 cm)</span>
+        </div>
+
+        <input 
+          type="range" 
+          id="height-calc-slider" 
+          class="height-slider" 
+          min="59" 
+          max="72" 
+          value="65" 
+          step="1" 
+          aria-label="Height in inches"
+          style="width: 100%; margin-bottom: 2rem;"
+        />
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; text-align: left; background: var(--navy-50); border: 1px solid var(--navy-100); border-radius: var(--border-radius-md); padding: 1.5rem; align-items: center;">
+          <div>
+            <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); display: block;">RECOMMENDED ABAYA SIZE</span>
+            <div id="rec-size-output" style="font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--navy-900); line-height: 1;">56</div>
+          </div>
+          <div>
+            <div id="rec-size-desc" style="font-size: 0.85rem; color: var(--slate-700); line-height: 1.5; margin-bottom: 0.5rem;">
+              Our classic medium tall fit (5'5" to 5'6"). Skims gracefully right above ankle level.
+            </div>
+            <button class="btn btn-navy btn-sm" onclick="document.getElementById('shop-section')?.scrollIntoView({behavior:'smooth'})">
+              Shop Size 56 Garments
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       CLIENT REVIEWS & TESTIMONIALS
+       ====================================================================== -->
+  <section class="section-py reviews-section" id="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">GLOBAL PATRONAGE</span>
+        <h2>Endorsed by Discerning Women Worldwide</h2>
+        <p>Read authentic testimonials from our clients across Dubai, London, Toronto, and North America.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Amina Al-Mansoor" />
+            </div>
+            <div class="reviewer-meta">
+              <h4>Amina Al-Mansoor <span class="verified-buyer-tag"><i class="fa-solid fa-circle-check"></i> Verified</span></h4>
+              <span>Dubai, United Arab Emirates</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <span class="review-product-tag">Purchased: Royal Navy Embroidered Silk Abaya</span>
+          <p class="review-text">
+            "The drape of this Dubai Nida is unlike anything I've purchased in London or Dubai. The midnight navy has this mesmerizing richness, and the beige embroidery is subtle yet undeniably couture. SanaGKK has won a lifelong customer."
+          </p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Mariam Katherine D." />
+            </div>
+            <div class="reviewer-meta">
+              <h4>Mariam Katherine D. <span class="verified-buyer-tag"><i class="fa-solid fa-circle-check"></i> Verified</span></h4>
+              <span>Toronto, Canada</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <span class="review-product-tag">Purchased: Sahara Sand Tailored Linen Co-ord</span>
+          <p class="review-text">
+            "Finally, a modest co-ord that doesn't feel like a shapeless bag! The high neck and side slits give such an elevated editorial aesthetic. The fabric is heavy enough that it isn't see-through at all. Absolutely worth every penny."
+          </p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Dr. Fatima Zehra" />
+            </div>
+            <div class="reviewer-meta">
+              <h4>Dr. Fatima Zehra <span class="verified-buyer-tag"><i class="fa-solid fa-circle-check"></i> Verified</span></h4>
+              <span>London, United Kingdom</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <span class="review-product-tag">Purchased: Medina Silk Luxury Hijab Trio</span>
+          <p class="review-text">
+            "The trio colors (Navy, Beige, Slate) match literally 90% of my wardrobe. The Medina silk stays in place without tearing your undercaps or requiring 10 pins. The magnetic keepsake box it arrived in was magnificent."
+          </p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="review-avatar">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Noor Al-Hassan" />
+            </div>
+            <div class="reviewer-meta">
+              <h4>Noor Al-Hassan <span class="verified-buyer-tag"><i class="fa-solid fa-circle-check"></i> Verified</span></h4>
+              <span>Dallas, Texas</span>
+            </div>
+          </div>
+          <div class="review-stars-row">
+            <span class="star-rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <span class="review-product-tag">Purchased: Minimalist Slate Trench Abaya</span>
+          <p class="review-text">
+            "I wore this to an international medical symposium and received so many compliments. It strikes the perfect balance between corporate professional and effortlessly modest. Length 56 was spot on for my 5'5\" height."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FREQUENTLY ASKED QUESTIONS (FAQ) ACCORDION
+       ====================================================================== -->
+  <section class="section-py faq-section" id="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">CLIENT ASSISTANCE</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Insights into our sizing, fabric provenance, and worldwide bespoke delivery.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>How do I determine the right abaya length for my height?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Abaya sizing corresponds to the total shoulder-to-hem length in inches. A client of 5'2" typically selects Size 52, 5'4" wears Size 54, 5'6" wears Size 56, and so forth. If you prefer to wear high heels, we recommend sizing up one length. You can also utilize our interactive Height Calculator above.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Are Modesty by SanaGKK garments truly opaque under bright lighting?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, unconditionally. Every SanaGKK piece is engineered with multi-layer high-density weave fabric specifically developed to prevent transparency under bright sunlight and indoor flash photography, without causing overheating.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is the story behind the Navy, Beige, and Slate palette?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Founder Sana Khan designed this signature triad to facilitate timeless capsule wardrobing. Midnight Navy delivers sovereign authority, Warm Sand Beige exudes desert warmth and understated modesty, while Slate Gray adds sharp architectural neutrality.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are your international shipping timelines and return policies?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We ship worldwide with DHL and FedEx Express. Orders over $150 USD receive complimentary express shipping. Standard delivery takes 3 to 5 business days, with tracking updates dispatched to your mobile and email. We offer a 30-day unworn return window with all tags and dustbags attached.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How should I care for my Dubai Nida and Medina Silk pieces?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We recommend dry cleaning or delicate hand washing with cold water and mild detergent. When steaming, use a garment steamer on low-to-medium heat. Medina Silks should always be steamed on reverse to preserve the buttery lustrous finish.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       VIP NEWSLETTER CLUB
+       ====================================================================== -->
+  <section class="vip-club-section">
+    <div class="container">
+      <div class="vip-club-box">
+        <span class="eyebrow" style="color: var(--gold-500);">THE SANAGKK CIRCLE</span>
+        <h2>Enter The Private Modesty Atelier</h2>
+        <p>Subscribe to receive complimentary bespoke tailoring previews, seasonal lookbooks, and <strong>10% off your inaugural order</strong>.</p>
+
+        <form class="vip-form" id="vip-newsletter-form">
+          <input type="email" required placeholder="Enter your email address..." aria-label="Email address" />
+          <button type="submit" class="btn btn-navy" style="background: var(--gold-500); border-color: var(--gold-500); color: #FFFFFF;">
+            Join Atelier <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <span class="vip-guarantee">
+          <i class="fa-solid fa-lock"></i> Strict confidentiality. Unsubscribe at any time. Code WELCOME10 provided upon joining.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <div class="brand-emblem">
+            <div class="brand-monogram">SG</div>
+            <span class="brand-name" style="color: var(--beige-100);">Modesty <span>by</span> SanaGKK</span>
+          </div>
+          <p>
+            An international modest fashion atelier dedicated to timeless silhouettes, Dubai Nida, French Medina Silks, and uncompromising elegance in Navy, Beige, and Slate.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-circle-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-circle-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" class="social-circle-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: The Collections -->
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#shop-section">The Autumn '26 Capsule</a></li>
+            <li><a href="#shop-section">Hand-Embroidered Abayas</a></li>
+            <li><a href="#shop-section">Medina Silk Hijabs</a></li>
+            <li><a href="#shop-section">Tailored Linen Co-ords</a></li>
+            <li><a href="#shop-section">Royal Festive Kaftans</a></li>
+            <li><a href="#shop-section">TENCEL Modal Slips</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Client Care -->
+        <div class="footer-col">
+          <h4>Client Atelier</h4>
+          <ul class="footer-links">
+            <li><a href="#size-guide" data-open-size-guide>Interactive Size Calculator</a></li>
+            <li><a href="#faq-section">Bespoke Tailoring Requests</a></li>
+            <li><a href="#faq-section">Worldwide Tracked Shipping</a></li>
+            <li><a href="#faq-section">Hassle-Free Returns</a></li>
+            <li><a href="#faq-section">Fabric Opacity Guarantee</a></li>
+            <li><a href="#faq-section">Fabric Care & Steam Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Atelier Locations -->
+        <div class="footer-col">
+          <h4>Atelier Studios</h4>
+          <p style="font-size: 0.82rem; margin-bottom: 0.75rem; color: var(--slate-300);">
+            <strong>Dubai Studio:</strong><br />
+            Alserkal Avenue, Creative District, Dubai, UAE
+          </p>
+          <p style="font-size: 0.82rem; margin-bottom: 0.75rem; color: var(--slate-300);">
+            <strong>London Showroom:</strong><br />
+            Mayfair Design Atelier, London W1K, United Kingdom
+          </p>
+          <p style="font-size: 0.82rem; color: var(--slate-300);">
+            <strong>Client Concierge:</strong><br />
+            atelier@modestybysanagkk.com
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Modesty by SanaGKK Atelier. All rights reserved. Registered trademark.
+        </div>
+
+        <div class="payment-gateways-list">
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-brands fa-cc-amex" title="American Express"></i>
+          <i class="fa-brands fa-cc-apple-pay" title="Apple Pay"></i>
+          <i class="fa-brands fa-google-pay" title="Google Pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       SLIDE-OUT CART DRAWER
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <aside class="slide-drawer" id="cart-drawer" aria-label="Shopping Bag Drawer">
+    <div class="drawer-header">
+      <h3>Your Shopping Bag</h3>
+      <button class="drawer-close-btn" data-close-drawer aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Tracker -->
+    <div class="shipping-meter-wrap">
+      <div class="meter-label">
+        <span id="free-shipping-message">Add $150 for FREE Express Worldwide Shipping</span>
+      </div>
+      <div class="meter-track">
+        <div class="meter-progress" id="free-shipping-progress" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable Container -->
+    <div class="drawer-body">
+      <div class="cart-items-list" id="cart-items-list">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+
+    <!-- Cart Footer with Promo and Totals -->
+    <div class="drawer-footer">
+      <div class="promo-code-box">
+        <input type="text" id="promo-code-input" placeholder="PROMO CODE (e.g. MODEST10)" aria-label="Promotion Code" />
+        <button class="btn btn-navy btn-sm" id="apply-promo-btn">Apply</button>
+      </div>
+
+      <div class="cart-summary-lines">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-val">$0</span>
+        </div>
+        <div class="summary-line" id="cart-discount-row" style="display: none; color: var(--success);">
+          <span>Promo Discount</span>
+          <span id="cart-discount-val">-$0</span>
+        </div>
+        <div class="summary-line">
+          <span>Worldwide Express Shipping</span>
+          <span id="cart-shipping-val">Calculated at checkout</span>
+        </div>
+        <div class="summary-line total-line">
+          <span>Estimated Total</span>
+          <span id="cart-total-val">$0</span>
+        </div>
+      </div>
+
+      <button class="btn btn-navy btn-full" id="checkout-trigger-btn">
+        <span>Proceed to Secure Checkout</span>
+        <i class="fa-solid fa-lock" style="font-size: 0.75rem;"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       SLIDE-OUT WISHLIST DRAWER
+       ====================================================================== -->
+  <aside class="slide-drawer" id="wishlist-drawer" aria-label="Saved Wishlist Drawer">
+    <div class="drawer-header">
+      <h3>Saved Wishlist</h3>
+      <button class="drawer-close-btn" data-close-drawer aria-label="Close wishlist">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="cart-items-list" id="wishlist-items-list">
+        <!-- Rendered by js/app.js -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       MOBILE NAVIGATION DRAWER
+       ====================================================================== -->
+  <aside class="slide-drawer" id="mobile-nav-drawer" style="max-width: 320px;" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-emblem">
+        <div class="brand-monogram" style="width: 28px; height: 28px; font-size: 0.95rem;">SG</div>
+        <span class="brand-name" style="font-size: 1.25rem;">Modesty <span>by</span> SanaGKK</span>
+      </div>
+      <button class="drawer-close-btn" data-close-drawer aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body" style="padding: 1.5rem 1rem;">
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;">
+        <li><a href="#shop-section" onclick="closeAllDrawers()">All Collections</a></li>
+        <li><a href="#shop-section" onclick="closeAllDrawers(); document.querySelector('[data-category=abayas]')?.click();">Luxury Abayas</a></li>
+        <li><a href="#shop-section" onclick="closeAllDrawers(); document.querySelector('[data-category=hijabs]')?.click();">Silks & Hijabs</a></li>
+        <li><a href="#shop-section" onclick="closeAllDrawers(); document.querySelector('[data-category=coords]')?.click();">Tailored Co-ords</a></li>
+        <li><a href="#shop-section" onclick="closeAllDrawers(); document.querySelector('[data-category=festive]')?.click();">Festive Kaftans</a></li>
+        <li><a href="#lookbook-section" onclick="closeAllDrawers()">Editorial Lookbook</a></li>
+        <li><a href="#size-guide" onclick="closeAllDrawers()">Size Calculator</a></li>
+        <li><a href="#story-section" onclick="closeAllDrawers()">Atelier Story</a></li>
+        <li><a href="#faq-section" onclick="closeAllDrawers()">Care & FAQ</a></li>
+      </ul>
+
+      <div style="margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--slate-200);">
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); display: block; margin-bottom: 0.75rem;">Client Care Concierge:</span>
+        <div style="font-size: 0.85rem; color: var(--navy-900); font-weight: 600;">atelier@modestybysanagkk.com</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       QUICK VIEW MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-card">
+      <!-- Populated dynamically via openQuickView() in js/app.js -->
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       INTERACTIVE SIZE GUIDE MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="size-guide-modal">
+    <div class="modal-card" style="max-width: 820px;">
+      <button class="modal-close-corner" data-close-modal="size-guide-modal" aria-label="Close size guide">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="size-guide-modal-body">
+        <span class="eyebrow">SANAGKK MEASUREMENT SYSTEM</span>
+        <h2 style="font-size: 2.2rem; margin-bottom: 0.5rem;">Abaya & Garment Size Guide</h2>
+        <p style="font-size: 0.88rem; color: var(--slate-600); margin-bottom: 1.75rem;">
+          Our abayas are designed with a relaxed, modest silhouette that flows naturally without hugging the body. Sizing is based primarily on height to ensure an elegant floor-grazing drape.
+        </p>
+
+        <div class="size-table-wrap">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>Height Range</th>
+                <th>Recommended Size</th>
+                <th>Bust Width</th>
+                <th>Sleeve Length</th>
+                <th>Hip Width</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>5'0" - 5'2"</strong> (152 - 157 cm)</td>
+                <td><strong style="color: var(--navy-900);">Size 52</strong></td>
+                <td>36 - 38"</td>
+                <td>27"</td>
+                <td>44" (Free)</td>
+              </tr>
+              <tr>
+                <td><strong>5'3" - 5'4"</strong> (160 - 163 cm)</td>
+                <td><strong style="color: var(--navy-900);">Size 54</strong></td>
+                <td>38 - 40"</td>
+                <td>28"</td>
+                <td>46" (Free)</td>
+              </tr>
+              <tr>
+                <td><strong>5'5" - 5'6"</strong> (165 - 168 cm)</td>
+                <td><strong style="color: var(--navy-900);">Size 56</strong></td>
+                <td>40 - 42"</td>
+                <td>29"</td>
+                <td>48" (Free)</td>
+              </tr>
+              <tr>
+                <td><strong>5'7" - 5'8"</strong> (170 - 173 cm)</td>
+                <td><strong style="color: var(--navy-900);">Size 58</strong></td>
+                <td>42 - 44"</td>
+                <td>30"</td>
+                <td>50" (Free)</td>
+              </tr>
+              <tr>
+                <td><strong>5'9" - 6'0"</strong> (175 - 183 cm)</td>
+                <td><strong style="color: var(--navy-900);">Size 60</strong></td>
+                <td>44 - 46"</td>
+                <td>31"</td>
+                <td>52" (Free)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="background: var(--navy-50); border: 1px solid var(--navy-100); border-radius: var(--border-radius-sm); padding: 1.25rem; margin-top: 1.5rem; font-size: 0.82rem; color: var(--navy-900);">
+          <strong style="display: block; margin-bottom: 0.25rem;"><i class="fa-solid fa-scissors"></i> Complimentary Custom Tailoring:</strong>
+          Need an in-between length (e.g. 55" or 57")? Simply choose your nearest size and note your height during checkout or message our atelier concierge.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       SIMULATED CHECKOUT MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card checkout-modal-card">
+      <div class="checkout-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div class="brand-monogram" style="background: var(--navy-800); border-color: var(--gold-500); width: 30px; height: 30px; font-size: 0.95rem;">SG</div>
+          <h3>Modesty by SanaGKK • Checkout</h3>
+        </div>
+        <button class="drawer-close-btn" data-close-modal="checkout-modal" style="color: var(--beige-100);" aria-label="Close checkout">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Checkout Stepper Progress -->
+      <div class="checkout-stepper">
+        <div class="step-node active" id="step-node-1">
+          <span class="step-num">1</span>
+          <span>Delivery Address</span>
+        </div>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem; color: var(--slate-300);"></i>
+        <div class="step-node" id="step-node-2">
+          <span class="step-num">2</span>
+          <span>Shipping Method</span>
+        </div>
+        <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem; color: var(--slate-300);"></i>
+        <div class="step-node" id="step-node-3">
+          <span class="step-num">3</span>
+          <span>Secure Payment</span>
+        </div>
+      </div>
+
+      <!-- Checkout Step Body Container -->
+      <div class="checkout-body" id="checkout-modal-body">
+        <!-- Rendered by js/app.js renderCheckoutStep() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       TOAST NOTIFICATIONS CONTAINER
+       ====================================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
